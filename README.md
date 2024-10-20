@@ -1,6 +1,4 @@
-다음은 위 코드에 대한 `README.md` 파일을 전문가답게 작성한 예시입니다. 이 문서에는 프로젝트 개요, 설치 방법, 사용법, 코드 설명 등이 포함되어 있습니다.
 
----
 
 # Face Gender and Age Detection with InsightFace
 
@@ -66,7 +64,7 @@ python app.py [image_folder_path] [output_folder_path]
 python app.py ./input_images ./output_images
 ```
 
-This command processes all images in the `input_images` folder, predicts their gender and age, and saves them in `output_images/Male` or `output_images/Female` with a filename format of `age_genderProbability_originalFilename.extension`.
+This command processes all images in the `input_images` folder, predicts their gender and age, and saves them in `output_images/Male` or `output_images/Female` with a filename format of `age_originalFilename.extension`.
 
 ### Output
 
@@ -98,7 +96,6 @@ age_genderProbability_originalFilename.extension
 
 Where:
 - `age`: Predicted age of the detected face.
-- `genderProbability`: A floating-point number (0.00 to 1.00) representing the confidence of the predicted gender (closer to 1.00 means male, closer to 0.00 means female).
 - `originalFilename`: The name of the input file without the extension.
 - `extension`: The original file extension (e.g., `.jpg`, `.png`).
 
@@ -109,10 +106,10 @@ After running the script, the output directory will have the following structure
 ```
 output_folder/
     ├── Male/
-    │   ├── age_genderProbability_originalFilename.jpg
+    │   ├── age_originalFilename.jpg
     │   └── ...
     └── Female/
-        ├── age_genderProbability_originalFilename.jpg
+        ├── age_originalFilename.jpg
         └── ...
 ```
 
@@ -136,5 +133,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - [OpenCV](https://opencv.org/): Open source computer vision and machine learning software library.
 
 ---
-
-Feel free to modify and enhance this README file based on your project needs and any additional features you may add.
